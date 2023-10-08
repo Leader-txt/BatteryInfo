@@ -163,7 +163,7 @@ void myDisplay(void)
 	glEnd();
 	//draw lines
 	glBegin(GL_LINE_STRIP);
-	float span = LINE_W / (float)MAXDATAS;
+	float span = LINE_W / (float)(MAXDATAS-1);
 	long maxRate = 0;
 	for (const auto& i : datas)
 		if (abs(i) > maxRate)
